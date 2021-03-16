@@ -16,19 +16,17 @@ public class Main {
         Util.getSessionFactory();
 
         UserService userService = new UserServiceImpl(new UserDaoHibernateImpl());
-        // userService.cleanUsersTable();
 
-//       userService.createUsersTable();
-//        userService.saveUser("Bob", "Silent", (byte) 32);
-//        userService.saveUser("Sidor", "Sidorov", (byte) 77);
-//        userService.saveUser("Stan", "Lee", (byte) 68);
-//        userService.saveUser("Tomas", "Shelby", (byte) 77);
+        userService.createUsersTable();
+        userService.saveUser("Bob", "Silent", (byte) 32);
+        userService.saveUser("Sidor", "Sidorov", (byte) 77);
+        userService.saveUser("Stan", "Lee", (byte) 68);
+        userService.saveUser("Tomas", "Shelby", (byte) 77);
 
-   //     userService.removeUserById(4);
-        //userService.getAllUsers();
-        // System.out.println(userService.getAllUsers());
-        //  userService.dropUsersTable();
-        //  userService.cleanUsersTable();
+        userService.removeUserById(4);
+        userService.getAllUsers();
+        userService.dropUsersTable();
+        userService.cleanUsersTable();
 
 
     }

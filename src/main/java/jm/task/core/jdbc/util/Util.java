@@ -24,7 +24,6 @@ public class Util {
         prop.setProperty("hibernate.connection.password", PASSWORD);
         prop.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
         prop.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
-        //prop.setProperty("hibernate.format_sql", "true");
         if (sessionFactory == null) {
             sessionFactory = new Configuration()
                     .addProperties(prop)
